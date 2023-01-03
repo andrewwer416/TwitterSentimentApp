@@ -1,0 +1,47 @@
+<html lang="en">
+
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WW7RDR4VW4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-WW7RDR4VW4');
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Digitilization of Rhinoplasty Research</title>
+        <!--
+            COPY
+            Template 2108 Dashboard
+
+            http://www.tooplate.com/view/2108-dashboard
+
+            -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+        <!-- https://fonts.google.com/specimen/Open+Sans -->
+        <link rel="stylesheet" href="app/css/fontawesome.min.css">
+        <!-- https://fontawesome.com/ -->
+        <link rel="stylesheet" href="app/css/bootstrap.min.css">
+        <!-- https://getbootstrap.com/ -->
+        <link rel="stylesheet" href="app/css/tooplate.css">
+    </head>
+    <body>
+        <p align=center style='margin-top:0.5in;margin-right:0.3in;
+        margin-bottom:6.0pt;margin-left:0.3in;text-align:center'><b><span
+        style='font-size:30.0pt'>Twitter Sentiment Analysis</span></b></p>
+        <br/>
+        <span style='font-size:20.0pt'>
+        <div>
+        <form action="/predict" method="POST">
+            Enter a search query: <input type='text' name='search_term'><br>
+            <input type='submit' value='Predict'>
+        </form>
+        <h4 style="text-align: center;">{{ result }}</h4>
+        </div>
+    </body>
+</html>
